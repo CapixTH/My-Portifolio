@@ -70,3 +70,21 @@ button:focus-visible {
 :root {
   background-color: black;
 } */
+
+* {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #1C1C22;
+  color: #fff;
+}
+
+
+:root {
+  --color-primary: #019bdb;
+  --color-secondary: #1c1c22;
+  --color-tertiary: #ffffff;
+  color: white;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 50px;
+} 
+
+

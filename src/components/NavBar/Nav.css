@@ -1,0 +1,24 @@
+
+.nav-link-custom {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: color 0.3s ease;
+    color: #fff;
+  }
+  
+  .nav-link-custom:hover {
+    color: #5856D6; /* Cor de fundo do NavBar */
+  }
+  
+.btn-link-custom {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: color 0.3s ease;
+    color: #fff;
+  }
+  
+  .btn-link-custom:hover {
+    color: #5856D6; /* Cor de fundo do NavBar */
+  }
