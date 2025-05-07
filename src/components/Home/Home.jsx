@@ -1,7 +1,11 @@
+import cv from '../../img/cv.jpg';
+// import teste from '../../img/teste.jpg';
+import './Home.css'; // (se quiser separar estilos)
+
 const Home = () => {
   return (
-    <>
-      <div>
+    <div className="d-flex align-items-center justify-content-around flex-wrap text-center">
+      <div style={{ maxWidth: '600px' }}>
         <h5>Desenvolvedor de Software</h5>
         <p className="display-3 text-wrap font-weight-bold">
           Olá, eu sou <br />
@@ -11,7 +15,6 @@ const Home = () => {
         </p>
         <p
           style={{
-            width: '50%',
             color: '#D2D2D3',
             textAlign: 'justify',
             paddingTop: '10px',
@@ -24,7 +27,20 @@ const Home = () => {
           contribuir com soluções sob medida para o seu projeto.
         </p>
       </div>
-    </>
+      <div>
+        <img
+          src={cv}
+          alt="Portfólio Guilherme Batista"
+          className="rounded-circle"
+          style={{
+            width: '350px',
+            height: '350px',
+            border: '5px solid #5856D6',
+            boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
+          }}
+        />
+      </div>
+    </div>
   );
 };
 
