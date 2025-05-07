@@ -33,7 +33,8 @@ const Nav = () => {
           </a>
           <a
             href="#"
-            className="mx-2 btn-link-custom bg-primary rounded-pill text-white px-3 py-1 hover-opacity-75"
+            id="hire-me"
+            className="mx-2 btn-link-custom bg-primary rounded-pill text-white px-3 py-1"
           >
             Hire me
           </a>
