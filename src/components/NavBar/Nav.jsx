@@ -31,20 +31,7 @@ const Nav = () => {
           <a href="#" className="mx-2 nav-link-custom py-1 px-2">
             Contato
           </a>
-          <a
-            href="#"
-            id="hire-me"
-            // className="mx-2 btn-link-custom bg-primary rounded-pill text-white px-3 py-1"
-            // style={{ '--cui-btn-bg': '#32A851', '--cui-btn-color':'#FFF' }}
-            // style={{
-            //   textDecoration: 'none',
-            //   color: '#fff',
-            //   backgroundColor: '#5856D6',
-            //   borderRadius: '20px',
-            //   padding: '5px 20px',
-            //   fontSize: '16px',
-            // }}
-          >
+          <a href="#" id="hire-me">
             Hire me
           </a>
         </div>

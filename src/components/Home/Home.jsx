@@ -1,7 +1,7 @@
 import { FaGithub } from 'react-icons/fa';
 import cv from '../../img/cv.jpg';
 // import teste from '../../img/teste.jpg';
-import './Home.css'; // (se quiser separar estilos)
+import './Home.css';
 
 const Home = () => {
   return (
