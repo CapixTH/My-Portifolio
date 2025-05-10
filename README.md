@@ -1,12 +1,18 @@
-# React + Vite
+# Portfólio Profissional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre o Projeto
 
-Currently, two official plugins are available:
+Este repositório contém o código-fonte do meu portfólio profissional, desenvolvido com as tecnologias **Vite** e **React**. O principal objetivo deste projeto é apresentar, de maneira organizada e acessível, informações relevantes sobre minha trajetória acadêmica e profissional, assim como os projetos em que venho trabalhando.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objetivo
 
-## Expanding the ESLint configuration
+O portfólio foi criado com o intuito de servir como uma vitrine digital, onde recrutadores, colegas de profissão e demais interessados possam conhecer minhas habilidades técnicas, experiências anteriores, áreas de estudo e principais competências. Através de uma navegação simples e moderna, busco destacar meu compromisso com o desenvolvimento contínuo e com a criação de soluções eficazes e bem estruturadas.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologias Utilizadas
+
+- **Vite**: utilizado para configurar o ambiente de desenvolvimento moderno e otimizado.
+- **React**: utilizado na construção da interface do portfólio, aproveitando sua flexibilidade e eficiência na criação de componentes reutilizáveis.
+
+## Considerações Finais
+
+Este portfólio será mantido e atualizado periodicamente, acompanhando minha evolução profissional e acadêmica. A estrutura foi pensada para ser simples, mas funcional, oferecendo uma visão clara do meu perfil como desenvolvedor.
