@@ -1,6 +1,5 @@
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import cv from '../../img/cv.jpg';
-// import teste from '../../img/teste.jpg';
 import './Home.css';
 
 const Home = () => {
@@ -8,8 +7,8 @@ const Home = () => {
     <>
       <div className="d-flex align-items-center justify-content-around flex-wrap text-center">
         <div style={{ maxWidth: '600px' }}>
-          <h5>Desenvolvedor de Software</h5>
-          <p className="display-3 text-wrap font-weight-bold">
+          <h5 className="text-white">Desenvolvedor de Software</h5>
+          <p className="display-3 text-wrap font-weight-bold text-light">
             Olá, eu sou <br />
             <span style={{ color: '#5856D6', fontWeight: 'bold' }}>
               Guilherme Batista
@@ -43,25 +42,40 @@ const Home = () => {
           />
         </div>
       </div>
-      <div
-        className="btn"
-        style={{
-          width: '50px',
-          height: '50px',
-          position: 'fixed',
-          bottom: '20px',
-          borderRadius: '50%',
-          right: '20px',
-          borderColor: '#5856D6',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
-        }}
-      >
-        <FaGithub
-          style={{ width: '100px', height: '100px', background: 'none' }}
-        />
+      <div className="d-flex align-items-center justify-content-center flex-wrap  py-5">
+        <a
+          href="https://github.com/CapixTH"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="d-flex align-items-center justify-content-center flex-wrap py-5"
+        >
+          <div id="iconGit" type="button">
+            <FaGithub
+              style={{
+                width: '50px',
+                height: '50px',
+                alignContent: 'center',
+              }}
+            />
+          </div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/guilherme-batista-9a6b692b9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="d-flex align-items-center justify-content-center flex-wrap py-5"
+        >
+          <div id="iconGit" type="button" className="px-3">
+            <FaLinkedin
+              style={{
+                paddingLeft: '10px',
+                width: '50px',
+                height: '50px',
+                alignContent: 'center',
+              }}
+            />
+          </div>
+        </a>
       </div>
     </>
   );
