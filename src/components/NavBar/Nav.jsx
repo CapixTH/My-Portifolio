@@ -8,7 +8,7 @@ const Nav = () => {
       <div className="d-flex justify-content-between align-items-center">
         <div>
           <a
-            href="#"
+            href="Home"
             className="fs-2"
             style={{ color: '#fff', textDecoration: 'none' }}
           >
@@ -16,7 +16,7 @@ const Nav = () => {
           </a>
         </div>
         <div className="d-inline-flex fs-4 ">
-          <a href="#" className="mx-2 nav-link-custom py-1 px-2">
+          <a href="Home" className="mx-2 nav-link-custom py-1 px-2">
             Home
           </a>
           <a href="#" className="mx-2 nav-link-custom py-1 px-2">
@@ -34,7 +34,16 @@ const Nav = () => {
           <a
             href="#"
             id="hire-me"
-            className="mx-2 btn-link-custom bg-primary rounded-pill text-white px-3 py-1"
+            // className="mx-2 btn-link-custom bg-primary rounded-pill text-white px-3 py-1"
+            // style={{ '--cui-btn-bg': '#32A851', '--cui-btn-color':'#FFF' }}
+            // style={{
+            //   textDecoration: 'none',
+            //   color: '#fff',
+            //   backgroundColor: '#5856D6',
+            //   borderRadius: '20px',
+            //   padding: '5px 20px',
+            //   fontSize: '16px',
+            // }}
           >
             Hire me
           </a>
