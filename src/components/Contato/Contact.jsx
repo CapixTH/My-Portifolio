@@ -57,6 +57,7 @@ const Contact = () => {
 
           <div className="d-flex gap-3">
             <CFormInput
+              defaultValue="name@surname.com"
               type="email"
               placeholder="Informe seu e-mail"
               value={email}
@@ -64,6 +65,7 @@ const Contact = () => {
               required
             />
             <CFormInputWithMask
+              defaultValue="name@surname.com"
               mask="+{55}(00)00000-0000"
               placeholder="Informe seu telefone"
               value={phone}
@@ -76,10 +78,20 @@ const Contact = () => {
           <CFormSelect
             aria-label="Default select example"
             options={[
-              { label: 'Open this select menu', key: 'default' },
-              { label: 'One', value: '1', key: 'one' },
-              { label: 'Two', value: '2', key: 'two' },
-              { label: 'Three', value: '3', disabled: true, key: 'three' },
+              {
+                label: 'Selecione o tipo de serviço',
+                key: 'default',
+                // disabled: true,
+                selected: true,
+              },
+              { label: 'Desenvolvimento Web', value: '1', key: 'one' },
+              { label: 'Design UI/UX', value: '2', key: 'two' },
+              {
+                label: 'Inteligência de Negócios',
+                value: '3',
+                disabled: true,
+                key: 'three',
+              },
             ]}
           />
 
@@ -87,7 +99,7 @@ const Contact = () => {
 
           <div className="d-flex justify-content-center mt-3">
             <CButton color="primary" type="submit">
-              Enviar formulário
+              Enviar mensagem
             </CButton>
           </div>
         </CForm>
