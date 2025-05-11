@@ -1,5 +1,12 @@
 import { useState } from 'react';
-import { CFormInput } from '@coreui/react';
+import {
+  CButton,
+  CCol,
+  CForm,
+  CFormInput,
+  CFormSelect,
+  CFormTextarea,
+} from '@coreui/react';
 import { IMaskMixin } from 'react-imask';
 
 const CFormInputWithMask = IMaskMixin(({ inputRef, ...props }) => (
@@ -21,7 +28,7 @@ const Contact = () => {
           padding: '20px',
         }}
       >
-        <div className="text-center">
+        <div className="text-center mb-4">
           <h1
             style={{
               color: '#5856D6',
@@ -39,28 +46,51 @@ const Contact = () => {
           </p>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+        <CForm className="d-flex flex-column gap-3">
           <CFormInput
-            className="w-100"
             type="text"
             placeholder="Informe seu nome completo"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
+            required
           />
-          <CFormInput
-            type="email"
-            placeholder="Informe seu e-mail"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+
+          <div className="d-flex gap-3">
+            <CFormInput
+              type="email"
+              placeholder="Informe seu e-mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <CFormInputWithMask
+              mask="+{55}(00)00000-0000"
+              placeholder="Informe seu telefone"
+              value={phone}
+              onAccept={(value) => setPhone(value)}
+              overwrite
+              required
+            />
+          </div>
+
+          <CFormSelect
+            aria-label="Default select example"
+            options={[
+              { label: 'Open this select menu', key: 'default' },
+              { label: 'One', value: '1', key: 'one' },
+              { label: 'Two', value: '2', key: 'two' },
+              { label: 'Three', value: '3', disabled: true, key: 'three' },
+            ]}
           />
-          <CFormInputWithMask
-            mask="+{55}(00)00000-0000"
-            placeholder="Informe seu telefone"
-            value={phone}
-            onAccept={(value) => setPhone(value)}
-            overwrite
-          />
-        </div>
+
+          <CFormTextarea placeholder="Escreva sua mensagem aqui" rows={4} />
+
+          <div className="d-flex justify-content-center mt-3">
+            <CButton color="primary" type="submit">
+              Enviar formulário
+            </CButton>
+          </div>
+        </CForm>
       </div>
     </>
   );
