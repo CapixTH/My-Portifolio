@@ -19,7 +19,7 @@ const Nav = () => {
           <a href="/" className="mx-2 nav-link-custom py-1 px-2">
             Home
           </a>
-          <a href="#" className="mx-2 nav-link-custom py-1 px-2">
+          <a href="Services" className="mx-2 nav-link-custom py-1 px-2">
             Serviços
           </a>
           <a href="#" className="mx-2 nav-link-custom py-1 px-2">
