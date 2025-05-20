@@ -9,7 +9,7 @@ import { BrowserRouter } from 'react-router';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div>
+    <div className='mb-5'>
       <Nav/>
     </div>
     <BrowserRouter>
