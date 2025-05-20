@@ -19,19 +19,19 @@ const Nav = () => {
           <a href="/" className="mx-2 nav-link-custom py-1 px-2">
             Home
           </a>
-          <a href="Services" className="mx-2 nav-link-custom py-1 px-2">
+          <a href="services" className="mx-2 nav-link-custom py-1 px-2">
             Serviços
           </a>
-          <a href="#" className="mx-2 nav-link-custom py-1 px-2">
+          <a href="resum" className="mx-2 nav-link-custom py-1 px-2">
             Resumo
           </a>
-          <a href="#" className="mx-2 nav-link-custom py-1 px-2">
+          <a href="works" className="mx-2 nav-link-custom py-1 px-2">
             Trabalhos
           </a>
           <a href="contact" className="mx-2 nav-link-custom py-1 px-2">
             Contato
           </a>
-          <a href="#" id="hire-me">
+          <a href="teste" id="hire-me">
             Hire me
           </a>
         </div>
