@@ -83,9 +83,11 @@ const Contact = () => {
             '--cui-input-bg': '#ffffff',
             '--cui-input-border-color': '#5856D6',
             '--cui-input-placeholder-color': '#D2D2D3',
+            color: '#fff',
           }}
         >
           <CFormInput
+            style={{ color: '#D2D2D3' }}
             type="text"
             placeholder="Informe seu nome completo"
             value={nome}
@@ -95,6 +97,7 @@ const Contact = () => {
 
           <div className="d-flex gap-3">
             <CFormInput
+              style={{ color: '#D2D2D3' }}
               type="email"
               placeholder="Informe seu e-mail"
               value={email}
@@ -102,6 +105,7 @@ const Contact = () => {
               required
             />
             <CFormInputWithMask
+              style={{ color: '#D2D2D3' }}
               mask="+{55}(00)00000-0000"
               placeholder="Informe seu telefone"
               value={phone}
@@ -130,6 +134,7 @@ const Contact = () => {
           />
 
           <CFormTextarea
+            style={{ color: '#D2D2D3' }}
             placeholder="Escreva sua mensagem aqui"
             rows={4}
             value={mensagem}
