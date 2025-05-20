@@ -1,6 +1,5 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import cv from '../../img/cv.jpg';
-import './Home.css';
 
 const Home = () => {
   return (
