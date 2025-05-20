@@ -80,7 +80,7 @@ const Contact = () => {
           style={{
             '--cui-body-bg': '#27272C',
             '--cui-border-color': '#5856D6',
-            '--cui-input-bg': '#27272C',
+            '--cui-input-bg': '#ffffff',
             '--cui-input-border-color': '#5856D6',
             '--cui-input-placeholder-color': '#D2D2D3',
           }}
@@ -125,7 +125,7 @@ const Contact = () => {
               },
               { label: 'Desenvolvimento Web', value: '1' },
               { label: 'Design UI/UX', value: '2' },
-              { label: 'Inteligência de Negócios', value: '3', disabled: true },
+              { label: 'Inteligência de Negócios', value: '3' },
             ]}
           />
 
