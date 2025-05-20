@@ -16,7 +16,7 @@ const Nav = () => {
           </a>
         </div>
         <div className="d-inline-flex fs-4 ">
-          <a href="Home" className="mx-2 nav-link-custom py-1 px-2">
+          <a href="/" className="mx-2 nav-link-custom py-1 px-2">
             Home
           </a>
           <a href="#" className="mx-2 nav-link-custom py-1 px-2">
@@ -28,7 +28,7 @@ const Nav = () => {
           <a href="#" className="mx-2 nav-link-custom py-1 px-2">
             Trabalhos
           </a>
-          <a href="#" className="mx-2 nav-link-custom py-1 px-2">
+          <a href="contact" className="mx-2 nav-link-custom py-1 px-2">
             Contato
           </a>
           <a href="#" id="hire-me">
