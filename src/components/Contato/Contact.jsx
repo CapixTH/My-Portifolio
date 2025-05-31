@@ -49,7 +49,7 @@ const Contact = () => {
   return (
     <>
       <div
-        className="w-50 py-5"
+        className="w-50 pt-1"
         style={{
           margin: '0 auto',
           borderRadius: '10px',
