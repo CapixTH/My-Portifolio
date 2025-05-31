@@ -1,0 +1,76 @@
+/* Services.css */
+.service-card {
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease; /* Transição para a cor do número e ícone */
+}
+
+.service-header:hover {
+  color: #5856d6; /* Cor primária no hover para número e ícone */
+}
+
+.service-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.service-header:hover .service-icon {
+  transform: scale(1.2) rotate(-45deg);
+  color: #5856d6; /* Garante que o ícone também mude de cor no hover do header */
+}
+
+.service-title {
+  font-size: 1.75rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.service-description {
+  color: #d2d2d3;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .service-header {
+    font-size: 2rem; /* Reduz o tamanho do número e ícone em telas menores */
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-header {
+    font-size: 1.5rem;
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+  }
+
+  .service-card {
+    margin-bottom: 1rem; /* Espaço extra entre cards empilhados */
+  }
+}
