@@ -20,5 +20,10 @@
   --color-tertiary: #ffffff;
   color: white;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  margin: 50px;
+  margin:  0px 50px 0px 50px;
+}
+
+html, body {
+  height: auto;
+  overflow: hidden;
 }
