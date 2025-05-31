@@ -4,7 +4,7 @@ import cv from '../../img/cv.jpg';
 const Home = () => {
   return (
     <>
-      <div className="d-flex align-items-center justify-content-around flex-wrap text-center mt-5">
+      <div className="d-flex align-items-center justify-content-around flex-wrap text-center mt-3">
         <div style={{ maxWidth: '600px' }}>
           <h5 className="text-white">Desenvolvedor de Software</h5>
           <p className="display-3 text-wrap font-weight-bold text-light">
@@ -41,7 +41,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="d-flex align-items-center justify-content-center flex-wrap  py-5">
+      <div className="d-flex align-items-center justify-content-center flex-wrap  pt-1">
         <a
           href="https://github.com/CapixTH"
           target="_blank"
