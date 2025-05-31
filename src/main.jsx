@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import Nav from './components/NavBar/Nav.jsx';
+import Nav from './components/pages/Nav.jsx';
 import AppRoutes from './routes/Router.jsx';
 import { BrowserRouter } from 'react-router';
 
