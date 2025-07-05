@@ -8,6 +8,16 @@ import {
   CCard,
   CCardBody,
 } from '@coreui/react';
+import {
+  FaBootstrap,
+  FaCss3Alt,
+  FaHtml5,
+  FaPython,
+  FaReact,
+} from 'react-icons/fa';
+import { DiJavascript } from 'react-icons/di';
+import { PiMicrosoftExcelLogoFill } from 'react-icons/pi';
+import { VscVscode } from 'react-icons/vsc';
 
 // Componentes separados para cada seção
 const Experience = () => (
@@ -49,7 +59,7 @@ const Skills = () => (
   <div>
     <h2 className="text-center">Minhas Skills</h2>
     <p
-      className="text-justify"
+      className="text-justify mb-5"
       style={{
         color: '#D2D2D3',
       }}
@@ -59,6 +69,34 @@ const Skills = () => (
       aprendizados e me atualizo constantemente, porque o mundo da tecnologia
       está sempre em movimento, e eu faço questão de acompanhar essa evolução.
     </p>
+    <CRow className="mt-4 justify-content-center">
+      <CCol xs={3} className="text-center border-2 border-primary">
+        <FaReact style={{ fontSize: '3rem' }} />
+      </CCol>
+      <CCol xs={3} className="text-center">
+        <FaHtml5 style={{ fontSize: '3rem' }} />
+      </CCol>
+      <CCol xs={3} className="text-center">
+        <FaCss3Alt style={{ fontSize: '3rem' }} />
+      </CCol>
+      <CCol xs={3} className="text-center">
+        <DiJavascript style={{ fontSize: '3rem' }} />
+      </CCol>
+    </CRow>
+    <CRow className="mt-5 justify-content-center">
+      <CCol xs={3} className="text-center">
+        <FaPython style={{ fontSize: '3rem' }} />
+      </CCol>
+      <CCol xs={3} className="text-center">
+        <PiMicrosoftExcelLogoFill style={{ fontSize: '3rem' }} />
+      </CCol>
+      <CCol xs={3} className="text-center">
+        <FaBootstrap style={{ fontSize: '3rem' }} />
+      </CCol>
+      <CCol xs={3} className="text-center">
+        <VscVscode style={{ fontSize: '3rem' }} />
+      </CCol>
+    </CRow>
   </div>
 );
 
