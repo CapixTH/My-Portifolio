@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 import {
   CButton,
   CForm,
@@ -24,26 +25,35 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Simula envio dos dados (ex: envio para API)
-    const dadosFormulario = {
-      nome,
-      email,
-      telefone: phone,
-      servico,
-      mensagem,
+    // Mapeia o valor do serviço para o texto
+    const servicos = {
+      1: 'Desenvolvimento Web',
+      2: 'Design UI/UX',
+      3: 'Inteligência de Negócios',
     };
 
-    console.log('Dados enviados:', dadosFormulario);
-
-    // Feedback para o usuário
-    setFeedback('Mensagem enviada com sucesso!');
-
-    // Resetar o formulário
-    setNome('');
-    setEmail('');
-    setPhone('');
-    setServico('');
-    setMensagem('');
+    emailjs
+      .send(
+        'service_kji4oyb', // Substitua pelo seu Service ID
+        'SEU_TEMPLATE_ID', // Substitua pelo seu Template ID
+        {
+          from_name: nome,
+          from_email: email,
+          phone,
+          service: servicos[servico] || servico,
+          message: mensagem,
+        },
+        'SEU_PUBLIC_KEY' // Substitua pelo seu Public Key
+      )
+      .then(() => {
+        setFeedback('Mensagem enviada com sucesso!');
+        setNome('');
+        setEmail('');
+        setPhone('');
+        setServico('');
+        setMensagem('');
+      })
+      .catch(() => setFeedback('Erro ao enviar mensagem, tente novamente.'));
   };
 
   return (

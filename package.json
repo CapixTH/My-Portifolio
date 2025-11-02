@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^7.0.2",
     "bootstrap": "^5.3.5",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^12.23.24",
     "motion": "^12.15.0",
     "react": "^19.0.0",
