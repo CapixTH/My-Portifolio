@@ -41,6 +41,14 @@ const AppRoutes = () => {
           </MotionWrapper>
         }
       />
+      <Route
+        path="*"
+        element={
+          <MotionWrapper locationKey={location.pathname}>
+            <Home />
+          </MotionWrapper>
+        }
+      />
     </Routes>
   );
 };
