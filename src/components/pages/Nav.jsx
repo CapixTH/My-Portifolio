@@ -38,9 +38,9 @@ const Nav = () => {
           <a href="resum" className="nav-link nav-link-custom mx-2 px-2">
             Resumo
           </a>
-          <a href="works" className="nav-link nav-link-custom mx-2 px-2">
+          {/* <a href="works" className="nav-link nav-link-custom mx-2 px-2">
             Trabalhos
-          </a>
+          </a> */}
           <a href="contact" className="nav-link nav-link-custom mx-2 px-2">
             Contato
           </a>
