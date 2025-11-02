@@ -20,12 +20,74 @@
   --color-tertiary: #ffffff;
   color: white;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  margin:  0px 50px 0px 50px;
+  margin: 0px 50px 0px 50px;
 }
 
 /* !!! Revisar para smartphone !!! */
-html, body {
-  height: auto;
-  overflow: hidden;
+/* Ajuste do scroll global: habilita rolagem vertical, comportamento suave e altura full */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Garantir que o root e a árvore principal tenham fundo escuro e ocupem a tela */
+#root,
+#root > div,
+main {
+  background-color: #1c1c22 !important;
+  min-height: 100vh;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* Estilização da scrollbar (WebKit + fallback Firefox) */
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(88, 86, 214, 0.65); /* cor primária com opacidade */
+  border-radius: 10px;
+  border: 3px solid transparent; /* cria espaço ao redor do thumb */
+  background-clip: padding-box;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(88, 86, 214, 0.65) transparent;
+}
+
+/* Forçar cards (CoreUI/Bootstrap) a terem fundo transparente para evitar blocos brancos */
+.card,
+.c-card,
+.ccard,
+.card-body,
+.c-card-body,
+.ccard-body {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Forçar containers e seções a não criarem blocos brancos inesperados */
+.container,
+.container-fluid,
+.row,
+.col,
+section,
+article,
+main {
+  background: transparent !important;
+}

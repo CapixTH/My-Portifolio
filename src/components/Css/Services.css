@@ -5,6 +5,13 @@
   border-radius: 8px;
 }
 
+/* Tornar o card transparente e remover bordas/box-shadow padrão (remove a moldura branca) */
+.service-card {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .service-card:hover {
   transform: translateY(-5px);
 }
