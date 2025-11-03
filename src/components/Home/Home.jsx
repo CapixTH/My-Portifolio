@@ -4,47 +4,55 @@ import { CContainer, CRow, CCol, CImage, CButton } from '@coreui/react';
 
 const Home = () => {
   return (
-    <CContainer className="pb-5 pt-2 home-mobile-stack">
-      <div className="d-flex flex-column align-items-center justify-content-center gap-3 w-100">
-        <nav className="w-100 mb-2" />
-        <img
-          src={cv}
-          alt="Portfólio Guilherme Batista"
-          className="rounded-circle mx-auto"
-          style={{
-            width: '180px',
-            height: '180px',
-            border: '5px solid #5856D6',
-            boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
-            objectFit: 'cover',
-            marginBottom: '1rem',
-          }}
-        />
-        <h5 className="text-white text-center mt-2">
-          Desenvolvedor de Software
-        </h5>
-        <p className="display-5 text-wrap font-weight-bold text-light text-center mb-1">
-          Olá, eu sou <br />
-          <span style={{ color: '#5856D6', fontWeight: 'bold' }}>
-            Guilherme Batista
-          </span>
-        </p>
-        <p
-          style={{
-            color: '#D2D2D3',
-            textAlign: 'center',
-            paddingTop: '10px',
-            maxWidth: '400px',
-            margin: '0 auto',
-          }}
+    <CContainer className="ps-5 pb-5 pt-2">
+      <CRow className="align-items-center justify-content-center g-4 flex-nowrap pb-5">
+        <CCol
+          xs={12}
+          md={7}
+          className="text-start d-flex flex-column justify-content-center"
+          style={{ maxWidth: '600px' }}
         >
-          Desenvolvedor de software com experiência no desenvolvimento de
-          soluções criativas e eficazes, tanto para front-end quanto para
-          back-end. Domino diversas tecnologias para criar aplicações ágeis,
-          seguras e de alta performance. Explore meu portfólio e veja como posso
-          contribuir com soluções sob medida para o seu projeto.
-        </p>
-        <div className="d-flex align-items-center justify-content-center gap-4 mt-3">
+          <h5 className="text-white text-center">Desenvolvedor de Software</h5>
+          <p className="display-3 text-wrap font-weight-bold text-light text-center">
+            Olá, eu sou <br />
+            <span style={{ color: '#5856D6', fontWeight: 'bold' }}>
+              Guilherme Batista
+            </span>
+          </p>
+          <p
+            style={{
+              color: '#D2D2D3',
+              textAlign: 'justify',
+              paddingTop: '10px',
+            }}
+          >
+            Desenvolvedor de software com experiência no desenvolvimento de
+            soluções criativas e eficazes, tanto para front-end quanto para
+            back-end. Domino diversas tecnologias para criar aplicações ágeis,
+            seguras e de alta performance. Explore meu portfólio e veja como
+            posso contribuir com soluções sob medida para o seu projeto.
+          </p>
+        </CCol>
+        <CCol xs={12} md={5} className="d-flex justify-content-center">
+          <img
+            src={cv}
+            alt="Portfólio Guilherme Batista"
+            className="rounded-circle"
+            style={{
+              width: '280px',
+              height: '280px',
+              border: '5px solid #5856D6',
+              boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
+              objectFit: 'cover',
+            }}
+          />
+        </CCol>
+      </CRow>
+      <CRow className="justify-content-center pt-3">
+        <CCol
+          xs={12}
+          className="d-flex align-items-center justify-content-center gap-4"
+        >
           <CButton
             color="link"
             href="https://github.com/CapixTH"
@@ -53,7 +61,7 @@ const Home = () => {
             style={{ padding: 0 }}
           >
             <FaGithub
-              style={{ width: '40px', height: '40px', color: '#fff' }}
+              style={{ width: '50px', height: '50px', color: '#fff' }}
             />
           </CButton>
           <CButton
@@ -64,11 +72,11 @@ const Home = () => {
             style={{ padding: 0 }}
           >
             <FaLinkedin
-              style={{ width: '40px', height: '40px', color: '#5856D6' }}
+              style={{ width: '50px', height: '50px', color: '#5856D6' }}
             />
           </CButton>
-        </div>
-      </div>
+        </CCol>
+      </CRow>
     </CContainer>
   );
 };
