@@ -7,7 +7,7 @@
 }
 
 .nav-link-custom:hover {
-  color: #5856D6;
+  color: #5856d6;
 }
 
 #hire-me {
@@ -15,7 +15,7 @@
   font-size: 16px;
   padding: 5px 20px;
   border-radius: 20px;
-  background-color: #5856D6;
+  background-color: #5856d6;
   border-bottom: 2px solid #4947b0;
   border-right: 2px solid #4947b0;
   color: white;
@@ -26,4 +26,48 @@
   background-color: #4947b0;
   border-bottom: 2px solid #2c2b69;
   border-right: 2px solid #2c2b69;
+}
+
+/* Responsividade para navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+  }
+  .navbar-brand {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+  .navbar-toggler {
+    margin-bottom: 0;
+    font-size: 2rem;
+    margin-left: auto;
+  }
+  .navbar-collapse {
+    width: 100%;
+    background: #23232b;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  .navbar-nav {
+    flex-direction: column !important;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .nav-link-custom,
+  #hire-me {
+    width: 100%;
+    text-align: left;
+    margin: 0.25rem 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+  }
+  #hire-me {
+    margin-top: 0.5rem;
+  }
 }

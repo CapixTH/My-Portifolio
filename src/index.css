@@ -1,3 +1,19 @@
+/* Ajuste de empilhamento e centralização para Home em mobile */
+@media (max-width: 768px) {
+  .home-mobile-stack {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    min-width: 100vw !important;
+  }
+  .home-mobile-stack * {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box;
+  }
+}
 * {
   font-family: 'JetBrains Mono', monospace;
   background-color: #1c1c22;
@@ -21,6 +37,21 @@
   color: white;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0px 50px 0px 50px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    margin: 0px 5px 0px 5px;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  #root, #root > div, main {
+    min-width: 100vw;
+    padding: 0;
+  }
+}
 }
 
 /* !!! Revisar para smartphone !!! */

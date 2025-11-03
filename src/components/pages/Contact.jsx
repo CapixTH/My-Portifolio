@@ -43,7 +43,7 @@ const Contact = () => {
           service: servicos[servico] || servico,
           message: mensagem,
         },
-        'SEU_PUBLIC_KEY' // Substitua pelo seu Public Key
+        'QKsPrEGzolKZNHXoI' // Public Key atualizada
       )
       .then(() => {
         setFeedback('Mensagem enviada com sucesso!');
