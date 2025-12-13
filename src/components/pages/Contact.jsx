@@ -34,8 +34,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_kji4oyb', // Substitua pelo seu Service ID
-        'SEU_TEMPLATE_ID', // Substitua pelo seu Template ID
+        'SEU_TEMPLATE_ID',
+        'service_kji4oyb',
         {
           from_name: nome,
           from_email: email,
@@ -43,7 +43,7 @@ const Contact = () => {
           service: servicos[servico] || servico,
           message: mensagem,
         },
-        'QKsPrEGzolKZNHXoI' // Public Key atualizada
+        'QKsPrEGzolKZNHXoI'
       )
       .then(() => {
         setFeedback('Mensagem enviada com sucesso!');

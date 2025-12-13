@@ -92,37 +92,62 @@ const Skills = () => (
           color: '#D2D2D3',
         }}
       >
-        Atuo como desenvolvedor de software e tenho paixão por construir soluções
-        modernas, eficientes e escaláveis. Estou sempre em busca de novos
-        aprendizados e me atualizo constantemente, porque o mundo da tecnologia
-        está sempre em movimento, e eu faço questão de acompanhar essa evolução.
+        Atuo como desenvolvedor de software e tenho paixão por construir
+        soluções modernas, eficientes e escaláveis. Estou sempre em busca de
+        novos aprendizados e me atualizo constantemente, porque o mundo da
+        tecnologia está sempre em movimento, e eu faço questão de acompanhar
+        essa evolução.
       </p>
       <CRow className="mt-4 justify-content-center">
         <CCol xs={3} className="text-center border-2 border-primary">
-          <FaReact className="skill-icon skill-react" style={{ fontSize: '3rem' }} />
+          <FaReact
+            className="skill-icon skill-react"
+            style={{ fontSize: '3rem' }}
+          />
         </CCol>
         <CCol xs={3} className="text-center">
-          <FaHtml5 className="skill-icon skill-html" style={{ fontSize: '3rem' }} />
+          <FaHtml5
+            className="skill-icon skill-html"
+            style={{ fontSize: '3rem' }}
+          />
         </CCol>
         <CCol xs={3} className="text-center">
-          <FaCss3Alt className="skill-icon skill-css" style={{ fontSize: '3rem' }} />
+          <FaCss3Alt
+            className="skill-icon skill-css"
+            style={{ fontSize: '3rem' }}
+          />
         </CCol>
         <CCol xs={3} className="text-center">
-          <DiJavascript className="skill-icon skill-js" style={{ fontSize: '3rem' }} />
+          <DiJavascript
+            className="skill-icon skill-js"
+            style={{ fontSize: '3rem' }}
+          />
         </CCol>
       </CRow>
       <CRow className="mt-5 justify-content-center">
         <CCol xs={3} className="text-center">
-          <FaPython className="skill-icon skill-python" style={{ fontSize: '3rem' }} />
+          <FaPython
+            className="skill-icon skill-python"
+            style={{ fontSize: '3rem' }}
+          />
         </CCol>
         <CCol xs={3} className="text-center">
-          <PiMicrosoftExcelLogoFill className="skill-icon skill-excel" style={{ fontSize: '3rem' }} />
+          <PiMicrosoftExcelLogoFill
+            className="skill-icon skill-excel"
+            style={{ fontSize: '3rem' }}
+          />
         </CCol>
         <CCol xs={3} className="text-center">
-          <FaBootstrap className="skill-icon skill-bootstrap" style={{ fontSize: '3rem' }} />
+          <FaBootstrap
+            className="skill-icon skill-bootstrap"
+            style={{ fontSize: '3rem' }}
+          />
         </CCol>
         <CCol xs={3} className="text-center">
-          <VscVscode className="skill-icon skill-vscode" style={{ fontSize: '3rem' }} />
+          <VscVscode
+            className="skill-icon skill-vscode"
+            style={{ fontSize: '3rem' }}
+          />
         </CCol>
       </CRow>
     </div>
