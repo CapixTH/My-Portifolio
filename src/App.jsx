@@ -2,29 +2,74 @@ import Home from './components/Home/Home';
 import Services from './components/pages/Services.jsx';
 import Contact from './components/pages/Contact.jsx';
 import Resum from './components/pages/Resum.jsx';
+import { motion } from 'framer-motion';
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
+
+const homeVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
 
 const App = () => {
   return (
     <div style={{ paddingTop: '100px' }}>
       {/* Seção Home */}
-      <section id="home" style={{ minHeight: '100vh' }}>
+      <motion.section
+        id="home"
+        style={{ minHeight: '100vh' }}
+        initial="hidden"
+        animate="visible"
+        variants={homeVariants}
+      >
         <Home />
-      </section>
+      </motion.section>
 
       {/* Seção Serviços */}
-      <section id="services" style={{ minHeight: '100vh', paddingTop: '40px' }}>
+      <motion.section
+        id="services"
+        style={{ minHeight: '100vh', paddingTop: '40px' }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={sectionVariants}
+      >
         <Services />
-      </section>
+      </motion.section>
 
       {/* Seção Resumo */}
-      <section id="resum" style={{ minHeight: '100vh', paddingTop: '40px' }}>
+      <motion.section
+        id="resum"
+        style={{ minHeight: '100vh', paddingTop: '40px' }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={sectionVariants}
+      >
         <Resum />
-      </section>
+      </motion.section>
 
       {/* Seção Contato */}
-      <section id="contact" style={{ minHeight: '100vh', paddingTop: '40px' }}>
+      <motion.section
+        id="contact"
+        style={{ minHeight: '100vh', paddingTop: '40px' }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={sectionVariants}
+      >
         <Contact />
-      </section>
+      </motion.section>
     </div>
   );
 };
