@@ -83,21 +83,52 @@ const Home = () => {
           </motion.p>
         </CCol>
         <CCol xs={12} md={5} className="d-flex justify-content-center">
-          <motion.img
-            src={cv}
-            alt="Portfólio Guilherme Batista"
-            className="rounded-circle"
+          <div
             style={{
-              width: '280px',
-              height: '280px',
-              border: '5px solid #5856D6',
-              boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
-              objectFit: 'cover',
+              position: 'relative',
+              width: '290px',
+              height: '290px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
-            variants={imageVariants}
-            initial="hidden"
-            animate="visible"
-          />
+          >
+            {/* Borda tracejada animada */}
+            <motion.div
+              style={{
+                position: 'absolute',
+                width: '100%',
+                height: '100%',
+                border: '5px dashed #5856D6',
+                borderRadius: '50%',
+                top: 0,
+                left: 0,
+              }}
+              animate={{ rotate: 360 }}
+              transition={{
+                duration: 60,
+                repeat: Infinity,
+                ease: 'linear',
+              }}
+            />
+            {/* Imagem */}
+            <motion.img
+              src={cv}
+              alt="Portfólio Guilherme Batista"
+              className="rounded-circle"
+              style={{
+                width: '280px',
+                height: '280px',
+                boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
+                objectFit: 'cover',
+                position: 'relative',
+                zIndex: 1,
+              }}
+              variants={imageVariants}
+              initial="hidden"
+              animate="visible"
+            />
+          </div>
         </CCol>
       </CRow>
       <CRow className="justify-content-center pt-3">
