@@ -4,6 +4,11 @@
   color: #fff;
 }
 
+/* Espaçamento para compensar a navbar fixa */
+body {
+  padding-top: 0;
+}
+
 #hire-me {
   background-color: #1c1c22;
   color: #fff;
@@ -20,7 +25,8 @@
   --color-tertiary: #ffffff;
   color: white;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  margin: 0px 50px 0px 50px;
+  margin: 0;
+  padding: 0;
 }
 
 /* !!! Revisar para smartphone !!! */
@@ -35,6 +41,8 @@ body {
   overflow-y: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
 /* Garantir que o root e a árvore principal tenham fundo escuro e ocupem a tela */
