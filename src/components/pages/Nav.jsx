@@ -7,6 +7,14 @@ const Nav = () => {
 
   const handleScrollToSection = (e, sectionId) => {
     e.preventDefault();
+
+    // Se for home, rola para o topo absoluto
+    if (sectionId === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setMenuOpen(false);
+      return;
+    }
+
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth', block: 'start' });
